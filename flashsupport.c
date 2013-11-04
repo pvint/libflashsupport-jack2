@@ -181,7 +181,7 @@ extern "C" {
 #ifdef V4L1
 #include <unistd.h>
 #include <pthread.h>
-#include <linux/videodev.h>
+#include "videodev.h"
 #include <sys/ioctl.h>
 #include <fcntl.h>
 #endif // V4L1
