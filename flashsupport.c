@@ -1205,7 +1205,7 @@ static void *FPX_SoundOutput_Open(void) {
 
 
     /* First, let's create the main loop */
-    if (!(p->client = jack_client_open( "flash", 0, NULL )))
+    if (!(p->client = jack_client_open( "flash", JackNoStartServer, NULL )))
         goto fail;
 
     jack_rate = jack_get_sample_rate( p->client );

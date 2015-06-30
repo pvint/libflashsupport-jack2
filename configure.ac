@@ -18,9 +18,9 @@
 # Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA
 # 02111-1307 USA.
 
-AC_PREREQ(2.57)
+AC_PREREQ([2.69])
 
-AC_INIT([libflashsupport-jack], 000, [mzcbylcnhqvb (at) 0pointer (dot) de])
+AC_INIT([libflashsupport-jack],[000],[mzcbylcnhqvb (at) 0pointer (dot) de])
 AC_CONFIG_SRCDIR([flashsupport.c])
 AC_CONFIG_HEADERS([config.h])
 AM_INIT_AUTOMAKE([foreign -Wall])
@@ -28,7 +28,8 @@ AM_INIT_AUTOMAKE([foreign -Wall])
 AC_PROG_CC
 AM_PROG_CC_C_O
 AC_PROG_GCC_TRADITIONAL
-AC_GNU_SOURCE
+AC_USE_SYSTEM_EXTENSIONS
+
 
 # GCC flags
 
@@ -58,8 +59,7 @@ if test "x$GCC" = "xyes" ; then
     done 
 fi
 
-AM_DISABLE_STATIC
-AC_PROG_LIBTOOL
+LT_INIT
 
 AC_HEADER_STDC
 

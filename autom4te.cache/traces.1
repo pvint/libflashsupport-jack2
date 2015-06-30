@@ -149,7 +149,7 @@ m4trace:configure.ac:23: -1- m4_pattern_allow([^target_alias$])
 m4trace:configure.ac:25: -1- AC_CONFIG_HEADERS([config.h])
 m4trace:configure.ac:26: -1- AM_INIT_AUTOMAKE([foreign -Wall])
 m4trace:configure.ac:26: -1- m4_pattern_allow([^AM_[A-Z]+FLAGS$])
-m4trace:configure.ac:26: -1- AM_AUTOMAKE_VERSION([1.13.4])
+m4trace:configure.ac:26: -1- AM_AUTOMAKE_VERSION([1.14.1])
 m4trace:configure.ac:26: -1- AC_REQUIRE_AUX_FILE([install-sh])
 m4trace:configure.ac:26: -1- AC_SUBST([INSTALL_PROGRAM])
 m4trace:configure.ac:26: -1- AC_SUBST_TRACE([INSTALL_PROGRAM])
@@ -283,6 +283,7 @@ m4trace:configure.ac:28: -1- m4_pattern_allow([^EXEEXT$])
 m4trace:configure.ac:28: -1- AC_SUBST([OBJEXT], [$ac_cv_objext])
 m4trace:configure.ac:28: -1- AC_SUBST_TRACE([OBJEXT])
 m4trace:configure.ac:28: -1- m4_pattern_allow([^OBJEXT$])
+m4trace:configure.ac:28: -1- AC_REQUIRE_AUX_FILE([compile])
 m4trace:configure.ac:28: -1- AC_SUBST([DEPDIR], ["${am__leading_dot}deps"])
 m4trace:configure.ac:28: -1- AC_SUBST_TRACE([DEPDIR])
 m4trace:configure.ac:28: -1- m4_pattern_allow([^DEPDIR$])
@@ -324,11 +325,6 @@ m4trace:configure.ac:28: -1- m4_pattern_allow([^am__fastdepCC_FALSE$])
 m4trace:configure.ac:28: -1- _AM_SUBST_NOTMAKE([am__fastdepCC_TRUE])
 m4trace:configure.ac:28: -1- _AM_SUBST_NOTMAKE([am__fastdepCC_FALSE])
 m4trace:configure.ac:29: -1- AM_PROG_CC_C_O
-m4trace:configure.ac:29: -1- AC_DEFINE_TRACE_LITERAL([NO_MINUS_C_MINUS_O])
-m4trace:configure.ac:29: -1- m4_pattern_allow([^NO_MINUS_C_MINUS_O$])
-m4trace:configure.ac:29: -1- AH_OUTPUT([NO_MINUS_C_MINUS_O], [/* Define to 1 if your C compiler doesn\'t accept -c and -o together. */
-@%:@undef NO_MINUS_C_MINUS_O])
-m4trace:configure.ac:29: -1- AC_REQUIRE_AUX_FILE([compile])
 m4trace:configure.ac:30: -1- AC_SUBST([CPP])
 m4trace:configure.ac:30: -1- AC_SUBST_TRACE([CPP])
 m4trace:configure.ac:30: -1- m4_pattern_allow([^CPP$])
@@ -344,9 +340,6 @@ m4trace:configure.ac:30: -1- m4_pattern_allow([^GREP$])
 m4trace:configure.ac:30: -1- AC_SUBST([EGREP])
 m4trace:configure.ac:30: -1- AC_SUBST_TRACE([EGREP])
 m4trace:configure.ac:30: -1- m4_pattern_allow([^EGREP$])
-m4trace:configure.ac:31: -1- _m4_warn([obsolete], [The macro `AC_GNU_SOURCE' is obsolete.
-You should run autoupdate.], [../../lib/autoconf/specific.m4:314: AC_GNU_SOURCE is expanded from...
-configure.ac:31: the top level])
 m4trace:configure.ac:31: -1- AC_DEFINE_TRACE_LITERAL([STDC_HEADERS])
 m4trace:configure.ac:31: -1- m4_pattern_allow([^STDC_HEADERS$])
 m4trace:configure.ac:31: -1- AH_OUTPUT([STDC_HEADERS], [/* Define to 1 if you have the ANSI C header files. */
@@ -413,15 +406,8 @@ m4trace:configure.ac:31: -1- AC_DEFINE_TRACE_LITERAL([_POSIX_PTHREAD_SEMANTICS])
 m4trace:configure.ac:31: -1- m4_pattern_allow([^_POSIX_PTHREAD_SEMANTICS$])
 m4trace:configure.ac:31: -1- AC_DEFINE_TRACE_LITERAL([_TANDEM_SOURCE])
 m4trace:configure.ac:31: -1- m4_pattern_allow([^_TANDEM_SOURCE$])
-m4trace:configure.ac:36: -1- _m4_warn([syntax], [AC_LANG_CONFTEST: no AC_LANG_SOURCE call detected in body], [../../lib/autoconf/lang.m4:193: AC_LANG_CONFTEST is expanded from...
-configure.ac:36: the top level])
-m4trace:configure.ac:61: -1- _m4_warn([obsolete], [The macro `AM_DISABLE_STATIC' is obsolete.
-You should run autoupdate.], [aclocal.m4:8251: AM_DISABLE_STATIC is expanded from...
-configure.ac:61: the top level])
-m4trace:configure.ac:62: -1- AC_PROG_LIBTOOL
-m4trace:configure.ac:62: -1- _m4_warn([obsolete], [The macro `AC_PROG_LIBTOOL' is obsolete.
-You should run autoupdate.], [aclocal.m4:129: AC_PROG_LIBTOOL is expanded from...
-configure.ac:62: the top level])
+m4trace:configure.ac:37: -1- _m4_warn([syntax], [AC_LANG_CONFTEST: no AC_LANG_SOURCE call detected in body], [../../lib/autoconf/lang.m4:193: AC_LANG_CONFTEST is expanded from...
+configure.ac:37: the top level])
 m4trace:configure.ac:62: -1- LT_INIT
 m4trace:configure.ac:62: -1- m4_pattern_forbid([^_?LT_[A-Z_]+$])
 m4trace:configure.ac:62: -1- m4_pattern_allow([^(_LT_EOF|LT_DLGLOBAL|LT_DLLAZY_OR_NOW|LT_MULTI_MODULE)$])
